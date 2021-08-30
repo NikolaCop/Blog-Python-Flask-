@@ -12,5 +12,10 @@
 {% else %}
 <p>The weather is not sunny today.</p>
 {% endif %}
+
+{% for posts in posts %}
+    <h2> {{posts.title}} </h2>
+    <h4> Author: {{posts.author}}</h4>
+{% endfor %}
 </body>
 </html>

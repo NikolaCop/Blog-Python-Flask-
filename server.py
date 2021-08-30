@@ -12,7 +12,7 @@ def about():
 
 @app.route('/blog')
 def blog():
-    return render_template('blog.html', author = 'Nikola', blogName = 'Test Blog')
+    return render_template('blog.html', author='Nikola Cop', sunny=False)
 
 @app.route('/blog/<string:blog_id>')
 def blogpost(blog_id):

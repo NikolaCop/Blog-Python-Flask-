@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Blog</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+
+{% block content %}
 <h1>Test Blog</h1>
 <p>I am {{ author }}, creator of this blog.</p>
 {% if sunny %}
@@ -15,7 +12,7 @@
 
 {% for posts in posts %}
     <h2> {{posts.title}} </h2>
-    <h4> Author: {{posts.author}}</h4>
+    <h3> Author: {{posts.author}}</h3>
 {% endfor %}
-</body>
-</html>
+
+{% endblock %}

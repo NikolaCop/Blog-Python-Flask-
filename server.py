@@ -30,7 +30,6 @@ def signup():
         return render_template('user.html', result=result)
     return render_template('signup.html', form=form)
 
-
 if __name__ == '__main__':
     app.run()
 
